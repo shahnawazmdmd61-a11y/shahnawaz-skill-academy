@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahnawaz Skill Academy — Complete Excel Mastery 3-Book Bilingual PDF Combo</title>
+  <meta name="description" content="Learn Basic to Advanced Excel, Pivot Tables, MIS Dashboards, Power Pivot (DAX) & AI Automation in English & Hindi. 3-Book Bilingual PDF Combo by MD Shahnawaz." />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter & Noto Sans Devanagari for crisp English + Hindi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter"', '"Noto Sans Devanagari"', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ECFDF5',
+              100: '#D1FAE5',
+              500: '#10B981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065F46',
+              900: '#064E3B',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Subtle 3D book card transitions & custom scrollbar */
+    .book-card {
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+    /* FAQ smooth transition */
+    .faq-content {
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden pb-20 md:pb-0">
+
+  <!-- ==================== 1. TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="bg-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
+      <div class="flex items-center gap-2 flex-wrap justify-center">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500 text-slate-950">
+          🔥 LAUNCH OFFER
+        </span>
+        <span class="font-medium">
+          3-Book Mega Combo सिर्फ <strong class="text-amber-400">₹249</strong> में
+          <span class="line-through text-slate-400 mx-1">₹999</span> — Instant PDF Download
+        </span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 bg-slate-800 border border-slate-700 px-3 py-1 rounded-full text-xs font-semibold text-emerald-400">
+        <span>Ends in:</span>
+        <span id="countdown-timer" class="font-mono tracking-wider text-white">05:42:19</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 2. STICKY NAVBAR ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-2.5 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-800 flex items-center justify-center text-white shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform">
+            <!-- Spreadsheet / Academy Icon SVG -->
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M9 3v18" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="block font-display font-extrabold text-base sm:text-lg text-slate-900 tracking-tight">
+              Shahnawaz Skill Academy
+            </span>
+            <span class="block text-[11px] font-medium text-emerald-700">
+              Practical Excel &amp; AI Learning
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+          <a href="#books" class="hover:text-emerald-600 transition-colors">All 3 Books</a>
+          <a href="#audience" class="hover:text-emerald-600 transition-colors">Features</a>
+          <a href="#pricing" class="hover:text-emerald-600 transition-colors">Pricing</a>
+          <a href="#author" class="hover:text-emerald-600 transition-colors">About</a>
+          <a href="#faq" class="hover:text-emerald-600 transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Primary Nav CTA + Mobile Menu Button -->
+        <div class="flex items-center gap-3">
+          <button
+            onclick="openCheckoutModal('Complete 3-Book Mega Combo (English + हिंदी)', 249, 999)"
+            class="inline-flex items-center justify-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/25 transition-all"
+          >
+            <span>Buy Now ₹249</span>
+            <svg class="w-4 h-4 hidden sm:inline" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </button>
+
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Nav -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2 border-t border-slate-100 space-y-1">
+        <a href="#books" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">All 3 Books (सिलेबस देखें)</a>
+        <a href="#audience" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Who Is This For?</a>
+        <a href="#pricing" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Pricing &amp; Offer (₹249)</a>
+        <a href="#author" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">About MD Shahnawaz</a>
+        <a href="#faq" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">FAQ (सवाल-जवाब)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 3. HERO SECTION ==================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-emerald-50/80 via-white to-white pt-10 pb-16 sm:pt-16 sm:pb-24">
+    <!-- Subtle decorative background glow -->
+    <div class="pointer-events-none absolute -top-24 right-0 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 -left-24 w-80 h-80 bg-amber-200/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+        <!-- Left Column: Copy & CTAs -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Bilingual Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/90 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-bold">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+            100% Bilingual (English + हिंदी) • Job &amp; Interview Ready
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-[2.85rem] text-slate-900 leading-[1.2] tracking-tight">
+            Basic से Advanced <span class="text-emerald-600">Excel + AI</span> सीखें — अब एक ही
+            <span class="relative inline-block">
+              <span class="relative z-10">3-Book Mega Combo</span>
+              <span class="absolute bottom-1 left-0 w-full h-3 bg-amber-300/60 -z-0 rounded"></span>
+            </span> में!
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            28+ घंटे का <strong class="text-slate-800">Practical Corporate Excel नॉलेज</strong> अब आसान Step-by-Step PDF Notes में।
+            <span class="text-slate-800 font-medium">Data Entry, MIS Reporting, Pivot Tables, Power Pivot (DAX)</span> और
+            <span class="text-slate-800 font-medium">AI Automation</span> को हिंदी और इंग्लिश दोनों में मास्टर करें।
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            <button
+              onclick="openCheckoutModal('Complete 3-Book Mega Combo (English + हिंदी)', 249, 999)"
+              class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white font-bold text-base px-7 py-4 rounded-2xl shadow-lg shadow-emerald-600/30 transition-all"
+            >
+              <span>Get Instant Access @ ₹249</span>
+              <span class="text-xs font-semibold bg-amber-400 text-slate-950 px-2 py-0.5 rounded-md">75% OFF</span>
+            </button>
+            <a
+              href="#books"
+              class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 font-bold text-base px-6 py-4 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 transition-all"
+            >
+              <span>See All 3 Books Inside</span>
+              <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-200/80">
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Instant PDF Download</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Mobile &amp; Laptop Ready</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Lifetime Access</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>UPI / Card Accepted</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 3 Stylish Layered 3D-Effect Book Cover Cards -->
+        <div class="lg:col-span-5">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Combo Savings Floating Pill -->
+            <div class="absolute -top-4 -right-2 sm:right-2 z-30 bg-amber-400 text-slate-950 font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg border-2 border-white rotate-3">
+              3-IN-1 MEGA BUNDLE • ₹249
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
+              <!-- Book 1 Card: Emerald -->
+              <div onclick="selectBookTab('book1', true)" class="book-card cursor-pointer relative rounded-2xl p-5 bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-900 text-white shadow-xl border-l-8 border-emerald-950/60">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded-full">Book 1 • Basic</span>
+                  <span class="text-[11px] font-bold bg-amber-400 text-slate-950 px-2 py-0.5 rounded-md">English + हिंदी</span>
+                </div>
+                <h3 class="font-display font-extrabold text-lg leading-snug">
+                  Excel Foundation &amp; Smart Data Entry
+                </h3>
+                <p class="text-xs text-emerald-100 mt-1.5">
+                  Shortcuts, Flash Fill, Data Validation, Conditional Formatting, Formulas &amp; Clean Printing
+                </p>
+                <div class="mt-3 pt-2.5 border-t border-white/15 flex items-center justify-between text-[11px] text-emerald-200 font-semibold">
+                  <span>Shahnawaz Skill Academy</span>
+                  <span>5 Chapters + 3 Projects →</span>
+                </div>
+              </div>
+
+              <!-- Book 2 Card: Deep Blue -->
+              <div onclick="selectBookTab('book2', true)" class="book-card cursor-pointer relative lg:ml-6 rounded-2xl p-5 bg-gradient-to-br from-blue-800 via-slate-800 to-slate-900 text-white shadow-xl border-l-8 border-slate-950/70">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded-full">Book 2 • Job-Ready Pro</span>
+                  <span class="text-[11px] font-bold bg-amber-400 text-slate-950 px-2 py-0.5 rounded-md">English + हिंदी</span>
+                </div>
+                <h3 class="font-display font-extrabold text-lg leading-snug">
+                  Advanced Formulas, Pivot Tables &amp; MIS
+                </h3>
+                <p class="text-xs text-blue-100 mt-1.5">
+                  VLOOKUP, XLOOKUP, INDEX+MATCH, SUMIFS, Dynamic Arrays &amp; Interactive MIS Dashboards
+                </p>
+                <div class="mt-3 pt-2.5 border-t border-white/15 flex items-center justify-between text-[11px] text-blue-200 font-semibold">
+                  <span>Shahnawaz Skill Academy</span>
+                  <span>6 Chapters + Case Studies →</span>
+                </div>
+              </div>
+
+              <!-- Book 3 Card: Purple / Indigo -->
+              <div onclick="selectBookTab('book3', true)" class="book-card cursor-pointer relative lg:ml-12 rounded-2xl p-5 bg-gradient-to-br from-indigo-700 via-purple-800 to-slate-900 text-white shadow-xl border-l-8 border-indigo-950/70">
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-[11px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded-full">Book 3 • Future-Proof</span>
+                  <span class="text-[11px] font-bold bg-amber-400 text-slate-950 px-2 py-0.5 rounded-md">English + हिंदी</span>
+                </div>
+                <h3 class="font-display font-extrabold text-lg leading-snug">
+                  Excel with AI, Power Pivot (DAX) &amp; VBA
+                </h3>
+                <p class="text-xs text-indigo-100 mt-1.5">
+                  Star Schema, DAX Time Intelligence, ChatGPT/Claude Prompts, .xlam Add-ins &amp; Freelancing
+                </p>
+                <div class="mt-3 pt-2.5 border-t border-white/15 flex items-center justify-between text-[11px] text-indigo-200 font-semibold">
+                  <span>Shahnawaz Skill Academy</span>
+                  <span>5 Chapters + Interview Q&amp;A →</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. WHAT'S INSIDE THE 3-BOOK COMBO ==================== -->
+  <section id="books" class="py-16 sm:py-20 bg-slate-50 border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+          Complete Syllabus Breakdown
+        </span>
+        <h2 class="mt-3 font-display font-extrabold text-2xl sm:text-4xl text-slate-900">
+          तीनों किताबों के अंदर आपको क्या-क्या मिलेगा?
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          नीचे किसी भी Book टैब पर क्लिक करें और देखें पूरा Chapter-by-Chapter सिलेबस (English + हिंदी दोनों में)
+        </p>
+      </div>
+
+      <!-- Interactive Tab Switcher -->
+      <div class="flex flex-wrap justify-center gap-2.5 sm:gap-4 mb-8" role="tablist">
+        <button
+          id="tab-book1"
+          onclick="selectBookTab('book1', false)"
+          class="book-tab-btn px-5 py-3 rounded-xl font-bold text-sm sm:text-base transition-all bg-emerald-600 text-white shadow-md shadow-emerald-600/25"
+        >
+          📗 Book 1: Basic to Intermediate
+        </button>
+        <button
+          id="tab-book2"
+          onclick="selectBookTab('book2', false)"
+          class="book-tab-btn px-5 py-3 rounded-xl font-bold text-sm sm:text-base transition-all bg-white text-slate-700 border border-slate-200 hover:border-emerald-400"
+        >
+          📘 Book 2: Advanced &amp; MIS Pro
+        </button>
+        <button
+          id="tab-book3"
+          onclick="selectBookTab('book3', false)"
+          class="book-tab-btn px-5 py-3 rounded-xl font-bold text-sm sm:text-base transition-all bg-white text-slate-700 border border-slate-200 hover:border-emerald-400"
+        >
+          📕 Book 3: AI, Power Pivot &amp; VBA
+        </button>
+      </div>
+
+      <!-- Book 1 Panel -->
+      <div id="panel-book1" class="book-panel bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+          <div>
+            <span class="inline-block text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full mb-2">
+              BOOK 1 OF 3 • FOR BEGINNERS, STUDENTS &amp; BACK-OFFICE JOBS
+            </span>
+            <h3 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">
+              Excel Foundation &amp; Smart Data Entry (Basic to Intermediate)
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">एक्सेल की बिल्कुल शुरुआत से तेज़ और एरर-फ्री प्रोफेशनल डेटा एंट्री तक</p>
+          </div>
+          <div class="shrink-0">
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-700 bg-emerald-50 px-4 py-2 rounded-xl">
+              ✔ 5 Chapters + 3 Practice Projects
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-emerald-600">CHAPTER 1</span>
+            <h4 class="font-bold text-slate-900 mt-1">Excel Interface &amp; Essential Shortcuts</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Workbook vs Worksheet, Rows/Columns/Ranges, और 15 सबसे ज़रूरी Navigation व Selection शॉर्टकट्स।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-emerald-600">CHAPTER 2</span>
+            <h4 class="font-bold text-slate-900 mt-1">Smart Data Entry &amp; Cleaning</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">AutoFill, Custom Lists, Built-in Data Entry Form (<code>Alt+D+O</code>), Flash Fill (<code>Ctrl+E</code>), Text to Columns &amp; Remove Duplicates।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-emerald-600">CHAPTER 3</span>
+            <h4 class="font-bold text-slate-900 mt-1">Formatting &amp; Clean Printing</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Indian Currency (₹), Date Formats, Formula-based Row Conditional Formatting, Repeat Headers &amp; Clean PDF Export।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-emerald-600">CHAPTER 4</span>
+            <h4 class="font-bold text-slate-900 mt-1">Productivity, Validation &amp; Security</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Paste Special (Values, Transpose, Bulk Math), Go To Special, Dropdown Lists, 10-Digit Mobile Validation &amp; Sheet Protection।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-emerald-600">CHAPTER 5</span>
+            <h4 class="font-bold text-slate-900 mt-1">Essential Formulas &amp; Basic Charts</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Cell Locking (<code>$</code> / <code>F4</code>), SUM, AVERAGE, COUNT/COUNTA/COUNTBLANK, ROUND, GST Invoice Example &amp; Charts।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+            <span class="text-xs font-extrabold text-emerald-700">PRACTICE LAB</span>
+            <h4 class="font-bold text-slate-900 mt-1">3 Hands-On Office Projects</h4>
+            <p class="text-xs sm:text-sm text-slate-700 mt-1.5">Smart Employee Register, Monthly Store Sales &amp; GST Sheet, और Print-Ready Protected Tracker + Mastery Checklist।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 Panel -->
+      <div id="panel-book2" class="book-panel hidden bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+          <div>
+            <span class="inline-block text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full mb-2">
+              BOOK 2 OF 3 • FOR MIS EXECUTIVES, ANALYSTS &amp; INTERVIEW PREP
+            </span>
+            <h3 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">
+              Advanced Excel Formulas, Pivot Tables &amp; MIS Reporting (Job-Ready Pro)
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">कॉर्पोरेट इंटरव्यू क्रैक करने और इंटरैक्टिव MIS डैशबोर्ड बनाने की पूरी गाइड</p>
+          </div>
+          <div class="shrink-0">
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-blue-700 bg-blue-50 px-4 py-2 rounded-xl">
+              ✔ 6 Chapters + 3 Corporate Case Studies
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-blue-700">CHAPTER 1</span>
+            <h4 class="font-bold text-slate-900 mt-1">Logical Mastery</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5"><code>IF</code>, <code>AND</code>, <code>OR</code>, Nested <code>IF</code>, <code>IFS</code>, <code>SWITCH</code>, और <code>IFERROR</code> से कॉर्पोरेट कंडीशन व स्लैब बनाना।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-blue-700">CHAPTER 2</span>
+            <h4 class="font-bold text-slate-900 mt-1">Complete Lookup Mastery</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5"><code>VLOOKUP</code> (Exact &amp; Approximate), <code>HLOOKUP</code>, Left-Lookup via <code>INDEX + MATCH</code>, और आधुनिक <code>XLOOKUP</code> / <code>XMATCH</code>।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-blue-700">CHAPTER 3</span>
+            <h4 class="font-bold text-slate-900 mt-1">Conditional &amp; Statistical Formulas</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5"><code>SUMIFS</code>, <code>COUNTIFS</code>, <code>AVERAGEIFS</code>, <code>MAXIFS</code>, <code>SUMPRODUCT</code>, <code>SUBTOTAL</code> और <code>FREQUENCY</code>।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-blue-700">CHAPTER 4</span>
+            <h4 class="font-bold text-slate-900 mt-1">Text, Date &amp; Financial Functions</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5"><code>LEFT/MID/FIND/TEXTJOIN</code>, <code>DATEDIF</code>, <code>EOMONTH</code>, <code>NETWORKDAYS.INTL</code>, और Loan EMI (<code>PMT/IPMT/PPMT/PV/FV</code>)।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-blue-700">CHAPTER 5</span>
+            <h4 class="font-bold text-slate-900 mt-1">Excel 365 Dynamic Array Formulas</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5"><code>FILTER</code>, <code>SORT</code>, <code>UNIQUE</code>, <code>SEQUENCE</code> और <code>RANDARRAY</code> से लाइव सर्च और ऑटो-स्पिलिंग रिपोर्ट्स।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-blue-50 border border-blue-200">
+            <span class="text-xs font-extrabold text-blue-800">CHAPTER 6 + LAB</span>
+            <h4 class="font-bold text-slate-900 mt-1">Pivot Tables &amp; Interactive MIS Dashboard</h4>
+            <p class="text-xs sm:text-sm text-slate-700 mt-1.5">Grouping, Show Values As, Calculated Fields, Slicers, Timelines, Power Query Multi-Sheet Pivot + 3 Interview Case Studies।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 3 Panel -->
+      <div id="panel-book3" class="book-panel hidden bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-10">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+          <div>
+            <span class="inline-block text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-3 py-1 rounded-full mb-2">
+              BOOK 3 OF 3 • FOR 10X SPEED, AUTOMATION &amp; FREELANCING
+            </span>
+            <h3 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">
+              Excel with AI, Power Pivot (DAX) &amp; Office Automation (Future-Proof Master)
+            </h3>
+            <p class="text-sm text-slate-600 mt-1">AI, Big Data मॉडलिंग और नो-कोड ऑटोमेशन से टॉप 1% एक्सेल यूज़र बनें</p>
+          </div>
+          <div class="shrink-0">
+            <span class="inline-flex items-center gap-1.5 text-sm font-bold text-indigo-700 bg-indigo-50 px-4 py-2 rounded-xl">
+              ✔ 5 Chapters + Capstone &amp; Interview Q&amp;A
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-indigo-700">CHAPTER 1</span>
+            <h4 class="font-bold text-slate-900 mt-1">Power Pivot &amp; Data Modeling</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Fact vs Dimension Tables, Star Schema, One-to-Many (<code>1:*</code>) Relationships और बिना VLOOKUP के मल्टी-टेबल एनालिसिस।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-indigo-700">CHAPTER 2</span>
+            <h4 class="font-bold text-slate-900 mt-1">DAX &amp; Time Intelligence</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Calculated Columns vs Measures, <code>CALCULATE</code>, <code>DIVIDE</code>, <code>DISTINCTCOUNT</code>, <code>YTD/MTD</code> और <code>SAMEPERIODLASTYEAR</code> (YoY)।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-indigo-700">CHAPTER 3</span>
+            <h4 class="font-bold text-slate-900 mt-1">Excel + ChatGPT &amp; Claude AI</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Golden Prompting Framework, Automated Data Cleaning, AI-Generated KPIs, Sales Forecasting और Privacy Rules।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-indigo-700">CHAPTER 4</span>
+            <h4 class="font-bold text-slate-900 mt-1">No-Code VBA Automation with AI</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Custom Formulas (UDFs), Permanent <code>.xlam</code> Add-ins, Multiple Files Auto-Merge और One-Click Outlook Email Macro।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+            <span class="text-xs font-extrabold text-indigo-700">CHAPTER 5 (BONUS)</span>
+            <h4 class="font-bold text-slate-900 mt-1">Freelancing &amp; Top 10 Interview Q&amp;A</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5">Fiverr, Upwork &amp; LinkedIn से कमाई के तरीके, 3-Project Portfolio Blueprint और कॉर्पोरेट इंटरव्यू के सटीक जवाब।</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
+            <span class="text-xs font-extrabold text-indigo-800">CAPSTONE LAB</span>
+            <h4 class="font-bold text-slate-900 mt-1">3 Master Automation Projects</h4>
+            <p class="text-xs sm:text-sm text-slate-700 mt-1.5">Power Pivot YoY Report, Personal <code>.xlam</code> Utility Add-in और One-Click Folder Merger Dashboard।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. WHO IS THIS COMBO FOR? ==================== -->
+  <section id="audience" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+          Who Should Buy This?
+        </span>
+        <h2 class="mt-3 font-display font-extrabold text-2xl sm:text-4xl text-slate-900">
+          यह 3-Book Combo किन लोगों के लिए बेस्ट है?
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          चाहे आप बिल्कुल नए हों या ऑफिस में प्रमोशन और बेहतर सैलरी चाहते हों — यह सीरीज़ हर लेवल को कवर करती है।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21a12.083 12.083 0 01-6.16-10.422L12 14z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">College Students &amp; Freshers</h3>
+          <p class="text-sm text-slate-600 mt-2">ग्रेजुएशन के साथ-साथ ऐसी प्रैक्टिकल जॉब स्किल सीखें जिसकी हर कंपनी में तुरंत डिमांड है।</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">Data Entry &amp; Back-Office</h3>
+          <p class="text-sm text-slate-600 mt-2">Flash Fill, Shortcuts और Validation से अपनी ऑफिस स्पीड 5× बढ़ाएं और गलतियों को ज़ीरो करें।</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">MIS Executives &amp; Accountants</h3>
+          <p class="text-sm text-slate-600 mt-2">XLOOKUP, SUMIFS, GST शीट्स, Loan EMI और Pivot Table डैशबोर्ड बनाकर बॉस को इम्प्रेस करें।</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">Corporate Job Seekers</h3>
+          <p class="text-sm text-slate-600 mt-2">प्रैक्टिकल Excel इंटरव्यू टेस्ट और टॉप 10 इंटरव्यू सवाल-जवाब के साथ आत्मविश्वास से जॉब पाएं।</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">Freelancers &amp; AI Learners</h3>
+          <p class="text-sm text-slate-600 mt-2">ChatGPT/Claude और नो-कोड VBA से क्लाइंट्स के लिए ऑटोमेशन व डैशबोर्ड बनाकर ऑनलाइन कमाएं।</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="p-6 rounded-2xl border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all bg-white">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900">Small Business Owners</h3>
+          <p class="text-sm text-slate-600 mt-2">अपने बिज़नेस का सेल्स, स्टॉक, GST बिलिंग और प्रॉफिट-लॉस बिना महंगे सॉफ्टवेयर के मैनेज करें।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. PRICING SECTION ==================== -->
+  <section id="pricing" class="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
+    <div class="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[36rem] h-72 bg-emerald-600/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400 bg-amber-400/10 border border-amber-400/30 px-3 py-1 rounded-full">
+          Simple One-Time Pricing
+        </span>
+        <h2 class="mt-3 font-display font-extrabold text-2xl sm:text-4xl text-white">
+          अपना प्लान चुनें और आज ही सीखना शुरू करें
+        </h2>
+        <p class="mt-3 text-slate-300 text-sm sm:text-base">
+          कोई मासिक शुल्क (Monthly Subscription) नहीं — एक बार पेमेंट करें और लाइफटाइम PDF एक्सेस पाएं।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <!-- Plan 1: Single Book -->
+        <div class="bg-slate-800/80 border border-slate-700 rounded-3xl p-7 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="font-display font-bold text-xl text-white">Single Book Option</h3>
+              <span class="text-xs font-semibold text-slate-300 bg-slate-700 px-3 py-1 rounded-full">Any 1 Book</span>
+            </div>
+            <p class="text-sm text-slate-400 mt-2">सिर्फ किसी एक लेवल (Basic, Advanced या AI) की किताब चुनें।</p>
+
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="font-display font-extrabold text-4xl text-white">₹99</span>
+              <span class="text-slate-400 text-sm">/ per book</span>
+              <span class="text-slate-500 line-through text-sm ml-1">₹349</span>
+            </div>
+
+            <!-- Book Selector for Single Purchase -->
+            <div class="mt-5">
+              <label for="single-book-select" class="block text-xs font-semibold text-slate-300 mb-1.5">Select Book (किताब चुनें):</label>
+              <select id="single-book-select" class="w-full bg-slate-900 border border-slate-600 text-white text-sm rounded-xl px-3.5 py-2.5 focus:outline-none focus:border-emerald-500">
+                <option value="Book 1: Excel Foundation & Smart Data Entry">Book 1: Foundation &amp; Data Entry (Basic)</option>
+                <option value="Book 2: Advanced Formulas, Pivot & MIS">Book 2: Advanced Formulas &amp; MIS (Pro)</option>
+                <option value="Book 3: Excel with AI, Power Pivot & VBA">Book 3: Excel with AI &amp; Automation</option>
+              </select>
+            </div>
+
+            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Any 1 Bilingual PDF Book (English + हिंदी)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Instant Download on Mobile &amp; Laptop</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span>Lifetime Access (One-Time Payment)</span>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            onclick="openSingleBookCheckout()"
+            class="mt-8 w-full py-3.5 px-6 rounded-xl font-bold text-sm sm:text-base bg-slate-700 hover:bg-slate-600 text-white border border-slate-600 transition-all"
+          >
+            Buy Single Book @ ₹99
+          </button>
+        </div>
+
+        <!-- Plan 2: BEST VALUE Mega Combo -->
+        <div class="relative bg-gradient-to-b from-emerald-900/90 to-slate-800 border-2 border-emerald-400 rounded-3xl p-7 sm:p-8 flex flex-col justify-between shadow-2xl shadow-emerald-950/50">
+          <!-- Best Value Ribbon -->
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-950 font-extrabold text-xs px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+            ⭐ BEST VALUE — SAVE 75% (MOST POPULAR)
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between pt-2">
+              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-white">Complete 3-Book Mega Combo</h3>
+            </div>
+            <p class="text-sm text-emerald-100 mt-1.5">Basic से लेकर Advanced MIS, Power Pivot (DAX) और AI Automation तक पूरा पैकेज।</p>
+
+            <div class="mt-6 flex items-baseline gap-3">
+              <span class="font-display font-extrabold text-5xl text-white">₹249</span>
+              <div>
+                <span class="block text-slate-400 line-through text-base font-semibold">₹999</span>
+                <span class="block text-xs font-bold text-amber-400">One-time payment</span>
+              </div>
+            </div>
+
+            <ul class="mt-6 space-y-3 text-sm text-slate-100">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>All 3 Bilingual PDF Books</strong> (Book 1 + Book 2 + Book 3)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>9 Practical Office Projects</strong> &amp; Corporate Case Studies</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Top 10 Interview Q&amp;A</strong> + Freelancing Earning Guide</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Ready-to-Use AI Prompts</strong> &amp; VBA Automation Code</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span><strong>Lifetime Access &amp; Free Future Updates</strong></span>
+              </li>
+            </ul>
+          </div>
+
+          <button
+            onclick="openCheckoutModal('Complete 3-Book Mega Combo (English + हिंदी)', 249, 999)"
+            class="mt-8 w-full py-4 px-6 rounded-xl font-extrabold text-base bg-amber-400 hover:bg-amber-300 active:scale-[0.98] text-slate-950 shadow-lg shadow-amber-400/20 transition-all"
+          >
+            Get Instant Access @ ₹249 →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. ABOUT THE CREATOR ==================== -->
+  <section id="author" class="py-16 sm:py-20 bg-emerald-50/60 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-7 sm:p-10 flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+        <!-- Professional Monogram Avatar -->
+        <div class="shrink-0">
+          <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-br from-emerald-600 via-emerald-700 to-slate-900 text-white flex items-center justify-center shadow-lg border-4 border-emerald-100">
+            <span class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">MS</span>
+          </div>
+        </div>
+
+        <!-- Bio Content -->
+        <div class="text-center sm:text-left">
+          <span class="inline-block text-xs font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+            About The Founder
+          </span>
+          <h2 class="mt-2 font-display font-extrabold text-2xl sm:text-3xl text-slate-900">
+            MD Shahnawaz
+          </h2>
+          <p class="text-sm font-semibold text-emerald-700">Founder, Shahnawaz Skill Academy</p>
+
+          <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+            <strong>Shahnawaz Skill Academy</strong> की शुरुआत एक सरल लक्ष्य के साथ की गई है — भारत के हर स्टूडेंट, फ्रेशर और ऑफिस वर्कर तक <strong class="text-slate-800">Practical, Job-Ready Excel और AI Skills</strong> को सबसे आसान <strong>हिंदी और इंग्लिश</strong> भाषा में और किफायती कीमत पर पहुँचाना।
+          </p>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            इन तीनों किताबों में केवल थ्योरी नहीं, बल्कि वही असली कॉर्पोरेट फ़ॉर्मूले, MIS डैशबोर्ड और AI वर्कफ़्लो शामिल हैं जो आज के इंटरव्यू और ऑफिस में रोज़ाना काम आते हैं।
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. INTERACTIVE FAQ ACCORDION ==================== -->
+  <section id="faq" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+          Frequently Asked Questions
+        </span>
+        <h2 class="mt-3 font-display font-extrabold text-2xl sm:text-3xl text-slate-900">
+          आपके मन में आने वाले सवाल (FAQ)
+        </h2>
+      </div>
+
+      <div class="space-y-3" id="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors">
+            <span class="text-sm sm:text-base">1. Payment के बाद PDF Books कैसे मिलेंगी?</span>
+            <svg class="faq-icon w-5 h-5 text-emerald-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            पेमेंट पूरा होते ही आपको स्क्रीन पर तुरंत <strong>Instant Download Link</strong> मिल जाएगा और साथ ही आपकी Email ID पर भी तीनों PDF Books का डाउनलोड लिंक भेज दिया जाएगा।
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors">
+            <span class="text-sm sm:text-base">2. क्या ये Books Hindi और English दोनों में हैं?</span>
+            <svg class="faq-icon w-5 h-5 text-emerald-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            जी हाँ! तीनों किताबें <strong>100% Bilingual (English + हिंदी)</strong> हैं। हर टॉपिक, शॉर्टकट और फ़ॉर्मूले को इंग्लिश हेडिंग के साथ आसान हिंदी में समझाया गया है, ताकि आप ऑफिस और इंटरव्यू दोनों में कॉन्फिडेंस के साथ काम कर सकें।
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors">
+            <span class="text-sm sm:text-base">3. क्या मैं इन्हें Mobile और Laptop दोनों में पढ़ सकता हूँ?</span>
+            <svg class="faq-icon w-5 h-5 text-emerald-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            बिल्कुल! ये हाई-क्वालिटी PDF फाइल्स हैं जिन्हें आप अपने Android/iPhone मोबाइल, टैबलेट या लैपटॉप में कभी भी बिना इंटरनेट (Offline) के पढ़ सकते हैं और चाहें तो प्रिंट भी निकाल सकते हैं।
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors">
+            <span class="text-sm sm:text-base">4. क्या Absolute Beginners भी इससे सीख सकते हैं?</span>
+            <svg class="faq-icon w-5 h-5 text-emerald-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            हाँ! <strong>Book 1</strong> बिल्कुल ज़ीरो लेवल (Workbook, Worksheet, Cell, Shortcuts) से शुरू होती है और धीरे-धीरे आपको Book 2 (Advanced &amp; MIS) और Book 3 (Power Pivot &amp; AI) के प्रो लेवल तक ले जाती है।
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors">
+            <span class="text-sm sm:text-base">5. क्या यह One-time payment है या Monthly charge?</span>
+            <svg class="faq-icon w-5 h-5 text-emerald-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            यह <strong>100% One-Time Payment</strong> है। आपको सिर्फ एक बार ₹249 (या सिंगल बुक के लिए ₹99) देना है। कोई हिडन या मासिक चार्ज नहीं है और एक्सेस लाइफटाइम रहेगा।
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-10 px-4 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <p class="font-display font-bold text-white text-base">Shahnawaz Skill Academy</p>
+        <p class="text-xs text-slate-400 mt-1">© 2026 Shahnawaz Skill Academy • Created by MD Shahnawaz. All rights reserved.</p>
+      </div>
+      <div class="flex items-center gap-5 text-xs font-medium">
+        <a href="#books" class="hover:text-emerald-400 transition-colors">Books</a>
+        <a href="#pricing" class="hover:text-emerald-400 transition-colors">Pricing</a>
+        <a href="#faq" class="hover:text-emerald-400 transition-colors">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 10. STICKY MOBILE BOTTOM BAR ==================== -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white border-t border-slate-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+    <div>
+      <p class="text-[11px] font-bold text-emerald-700 uppercase">3-Book Mega Combo</p>
+      <div class="flex items-baseline gap-1.5">
+        <span class="font-display font-extrabold text-xl text-slate-900">₹249</span>
+        <span class="text-xs text-slate-400 line-through">₹999</span>
+      </div>
+    </div>
+    <button
+      onclick="openCheckoutModal('Complete 3-Book Mega Combo (English + हिंदी)', 249, 999)"
+      class="bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-sm px-6 py-3 rounded-xl shadow-md shadow-emerald-600/25"
+    >
+      Buy Now →
+    </button>
+  </div>
+
+  <!-- ==================== INTERACTIVE CHECKOUT / PAYMENT MODAL ==================== -->
+  <div id="checkout-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden border border-slate-200 max-h-[92vh] overflow-y-auto">
+      <!-- Modal Header -->
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">Shahnawaz Skill Academy</span>
+          <h3 class="font-display font-bold text-lg">Complete Your Order</h3>
+        </div>
+        <button onclick="closeCheckoutModal()" aria-label="Close Modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Modal Form View -->
+      <div id="checkout-form-view" class="p-6 space-y-4">
+        <!-- Selected Plan Summary -->
+        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 flex items-center justify-between gap-3">
+          <div>
+            <p class="text-xs font-bold text-emerald-800">Selected Package:</p>
+            <p id="modal-plan-name" class="font-bold text-sm text-slate-900 mt-0.5">Complete 3-Book Mega Combo (English + हिंदी)</p>
+          </div>
+          <div class="text-right shrink-0">
+            <span id="modal-plan-price" class="font-display font-extrabold text-xl text-emerald-700">₹249</span>
+            <span id="modal-plan-mrp" class="block text-xs text-slate-400 line-through">₹999</span>
+          </div>
+        </div>
+
+        <!-- Inline Error Box -->
+        <div id="checkout-error" class="hidden text-xs font-semibold text-red-700 bg-red-50 border border-red-200 rounded-xl px-3.5 py-2.5"></div>
+
+        <!-- Customer Form -->
+        <form id="checkout-form" onsubmit="handleCheckoutSubmit(event)" class="space-y-3.5">
+          <div>
+            <label for="buyer-name" class="block text-xs font-bold text-slate-700 mb-1">Full Name (आपका नाम) *</label>
+            <input id="buyer-name" type="text" required placeholder="e.g., Rahul Kumar" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
+          </div>
+          <div>
+            <label for="buyer-email" class="block text-xs font-bold text-slate-700 mb-1">Email ID (PDF लिंक इसी पर आएगा) *</label>
+            <input id="buyer-email" type="email" required placeholder="e.g., rahul@gmail.com" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
+          </div>
+          <div>
+            <label for="buyer-phone" class="block text-xs font-bold text-slate-700 mb-1">WhatsApp Number (10 Digits) *</label>
+            <input id="buyer-phone" type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="e.g., 9876543210" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" />
+          </div>
+
+          <!-- Supported UPI & Payment Badges -->
+          <div class="pt-1">
+            <p class="text-[11px] font-semibold text-slate-500 mb-2">100% Secure Payment via UPI / Cards:</p>
+            <div class="flex flex-wrap gap-2 text-[11px] font-bold text-slate-700">
+              <span class="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200">PhonePe</span>
+              <span class="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200">Google Pay</span>
+              <span class="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200">Paytm</span>
+              <span class="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200">BHIM UPI</span>
+              <span class="px-2.5 py-1 rounded-lg bg-slate-100 border border-slate-200">Cards</span>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 px-6 rounded-xl font-extrabold text-base bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white shadow-lg shadow-emerald-600/25 transition-all">
+            Proceed to Pay <span id="modal-btn-price">₹249</span> →
+          </button>
+        </form>
+
+        <!-- Helpful Note for Site Owner (MD Shahnawaz) -->
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-[11px] text-amber-900 leading-relaxed">
+          <strong>Owner Setup Tip (MD Shahnawaz):</strong> लाइव पेमेंट लेने के लिए इस फ़ाइल के JavaScript में <code>PAYMENT_LINKS</code> के अंदर अपना असली <strong>Cosmofeed / Topmate / Razorpay</strong> लिंक पेस्ट कर दें।
+        </div>
+      </div>
+
+      <!-- Simulated Demo Success View -->
+      <div id="checkout-success-view" class="hidden p-7 text-center space-y-4">
+        <div class="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h4 class="font-display font-extrabold text-xl text-slate-900">Demo Order Confirmed!</h4>
+        <p id="success-message" class="text-sm text-slate-600 leading-relaxed"></p>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-600">
+          जब आप अपना असली <strong>Razorpay / Cosmofeed / Topmate</strong> लिंक जोड़ देंगे, तो "Proceed to Pay" क्लिक करते ही कस्टमर सीधे आपके पेमेंट पेज पर रीडायरेक्ट हो जाएगा।
+        </div>
+        <button onclick="closeCheckoutModal()" class="w-full py-3 rounded-xl font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white transition-colors">
+          Back to Landing Page
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== VANILLA JAVASCRIPT INTERACTIONS ==================== -->
+  <script>
+    /**
+     * OWNER CONFIGURATION (MD Shahnawaz):
+     * Replace the empty strings below with your real Cosmofeed, Topmate, or Razorpay Payment Page URLs
+     * to automatically redirect buyers to live UPI checkout!
+     */
+    const PAYMENT_LINKS = {
+      combo249: '',   // e.g., 'https://rzp.io/l/shahnawaz-excel-combo'
+      single99: ''    // e.g., 'https://rzp.io/l/shahnawaz-single-book'
+    };
+
+    let currentSelectedPrice = 249;
+    let currentSelectedPlan = 'Complete 3-Book Mega Combo (English + हिंदी)';
+
+    // 1. Live Countdown Timer (persists during session)
+    function startCountdownTimer() {
+      const timerEl = document.getElementById('countdown-timer');
+      if (!timerEl) return;
+
+      let totalSeconds = 5 * 3600 + 42 * 60 + 19; // 05:42:19 launch offer countdown
+      setInterval(() => {
+        if (totalSeconds <= 0) totalSeconds = 6 * 3600;
+        totalSeconds--;
+        const hrs = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+        const mins = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const secs = String(totalSeconds % 60).padStart(2, '0');
+        timerEl.textContent = `${hrs}:${mins}:${secs}`;
+      }, 1000);
+    }
+
+    // 2. Interactive Book Tabs Switcher
+    function selectBookTab(bookId, shouldScroll) {
+      try {
+        // Hide all panels
+        document.querySelectorAll('.book-panel').forEach(panel => {
+          panel.classList.add('hidden');
+        });
+        // Reset all tab buttons
+        document.querySelectorAll('.book-tab-btn').forEach(btn => {
+          btn.className = 'book-tab-btn px-5 py-3 rounded-xl font-bold text-sm sm:text-base transition-all bg-white text-slate-700 border border-slate-200 hover:border-emerald-400';
+        });
+
+        // Show selected panel
+        const activePanel = document.getElementById(`panel-${bookId}`);
+        const activeBtn = document.getElementById(`tab-${bookId}`);
+        if (activePanel) activePanel.classList.remove('hidden');
+        if (activeBtn) {
+          activeBtn.className = 'book-tab-btn px-5 py-3 rounded-xl font-bold text-sm sm:text-base transition-all bg-emerald-600 text-white shadow-md shadow-emerald-600/25';
+        }
+
+        if (shouldScroll) {
+          const booksSection = document.getElementById('books');
+          if (booksSection) booksSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      } catch (err) {
+        console.error('Tab switch error:', err);
+      }
+    }
+
+    // 3. FAQ Accordion Toggle
+    function toggleFaq(buttonEl) {
+      const item = buttonEl.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const icon = item.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+
+      // Close all others for clean UX
+      document.querySelectorAll('.faq-item').forEach(other => {
+        other.querySelector('.faq-answer').classList.add('hidden');
+        other.querySelector('.faq-icon').classList.remove('rotate-180');
+      });
+
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // 4. Checkout Modal Controls
+    function openCheckoutModal(planName, price, mrp) {
+      currentSelectedPlan = planName;
+      currentSelectedPrice = price;
+
+      document.getElementById('modal-plan-name').textContent = planName;
+      document.getElementById('modal-plan-price').textContent = `₹${price}`;
+      document.getElementById('modal-plan-mrp').textContent = `₹${mrp}`;
+      document.getElementById('modal-btn-price').textContent = `₹${price}`;
+
+      // Reset views
+      document.getElementById('checkout-form-view').classList.remove('hidden');
+      document.getElementById('checkout-success-view').classList.add('hidden');
+      document.getElementById('checkout-error').classList.add('hidden');
+
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function openSingleBookCheckout() {
+      const selectEl = document.getElementById('single-book-select');
+      const selectedBook = selectEl ? selectEl.value : 'Single Excel PDF Book';
+      openCheckoutModal(selectedBook, 99, 349);
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById('checkout-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function handleCheckoutSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('buyer-name').value.trim();
+      const email = document.getElementById('buyer-email').value.trim();
+      const phone = document.getElementById('buyer-phone').value.trim();
+      const errorBox = document.getElementById('checkout-error');
+
+      if (!name || !email || !/^[0-9]{10}$/.test(phone)) {
+        errorBox.textContent = 'कृपया सही नाम, ईमेल और 10 अंकों का WhatsApp नंबर दर्ज करें।';
+        errorBox.classList.remove('hidden');
+        return;
+      }
+      errorBox.classList.add('hidden');
+
+      // Check if live payment link is configured by MD Shahnawaz
+      const liveUrl = currentSelectedPrice === 249 ? PAYMENT_LINKS.combo249 : PAYMENT_LINKS.single99;
+      if (liveUrl && liveUrl.startsWith('http')) {
+        window.open(liveUrl, '_blank', 'noopener');
+        return;
+      }
+
+      // Demo Confirmation State
+      document.getElementById('checkout-form-view').classList.add('hidden');
+      document.getElementById('checkout-success-view').classList.remove('hidden');
+      document.getElementById('success-message').innerHTML =
+        `धन्यवाद <strong>${name}</strong>! आपका <strong>${currentSelectedPlan}</strong> (₹${currentSelectedPrice}) का डेमो ऑर्डर सफल रहा। लाइव मोड में PDF लिंक सीधे <strong>${email}</strong> और WhatsApp (<strong>${phone}</strong>) पर भेज दिया जाएगा।`;
+    }
+
+    // 5. Mobile Menu & Modal Backdrop/Escape Listeners
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdownTimer();
+
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+
+      const modal = document.getElementById('checkout-modal');
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeCheckoutModal();
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeCheckoutModal();
+      });
+    });
+  </script>
+</body>
+</html>
